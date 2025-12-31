@@ -9,18 +9,40 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/highlights-slider.css" />
   </head>
   <body>
     <!-- Skip link for accessibility -->
     <!-- <a href="#main-content" class="skip-link"> Skip to main content </a> -->
 
-    <!-- HEADER/NAVBAR -->
-    <header class="header">
+    <!-- HEADER -->
+    <!-- STICKY HEADER -->
+    <header class="header header-sticky" id="stickyHeader">
+      <div class="header-sticky-container">
+        <div class="header-logo header-logo-small">
+          <img
+            src="/assets/logos/logo-1.png"
+            alt="Premier Schools Exhibition"
+          />
+        </div>
+
+        <a href="#register" class="header-sticky-cta">
+          <span class="header-sticky-icon-text">Register Now</span>
+          <span class="header-sticky-cta-icon">→</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- TEMPORARY HEADER-->
+    <header class="header header--hero" id="heroHeader">
       <div class="header-container">
         <div class="header-logo">
           <img
-            src="/assets/logos/pse-logo.jpeg"
+            src="/assets/logos/logo-1.png"
             alt="Premier Schools Exhibition"
           />
         </div>
@@ -50,17 +72,19 @@
               <span class="hero-subtitle">All IN ONE PLACE</span>
             </h1>
 
-            <div class="hero-event">
-              <div class="hero-event_col hero-event_col--left">
-                <p class="hero-event_title">Apparel House,</p>
-                <p class="hero-event_sub">Sec 44, Gurugram</p>
-              </div>
+            <div class="hero-event-container">
+              <div class="hero-event">
+                <div class="hero-event_col hero-event_col--left">
+                  <p class="hero-event_title">Apparel House,</p>
+                  <p class="hero-event_sub">Sec 44, Gurugram</p>
+                </div>
 
-              <span class="hero-event_divider" aria-hidden="true"></span>
+                <span class="hero-event_divider" aria-hidden="true"></span>
 
-              <div class="hero-event_col hero-event_col--right">
-                <p class="hero-event_title">2–3 August 2025</p>
-                <p class="hero-event_sub">Sat–Sun | 10AM – 6PM</p>
+                <div class="hero-event_col hero-event_col--right">
+                  <p class="hero-event_title">2–3 August 2025</p>
+                  <p class="hero-event_sub">Sat - Sun | 10AM - 6PM</p>
+                </div>
               </div>
             </div>
           </div>
@@ -78,51 +102,46 @@
                 >
                   <div class="hero-slide-set">
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-1-1.png"
                       alt="Student reading a book"
                       loading="eager"
                     />
                     <img
-                      src="assets/images/hero-2.png"
+                      src="assets/images/slider-1-2.png"
                       alt="Students walking in school campus"
                       loading="lazy"
                     />
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-1-3.png"
                       alt="Student reading a book"
                       loading="eager"
                     />
                     <img
-                      src="assets/images/hero-2.png"
+                      src="assets/images/slider-1-4.png"
                       alt="Students walking in school campus"
                       loading="lazy"
-                    />
-                    <img
-                      src="assets/images/hero-1.jpg"
-                      alt="Student reading a book"
-                      loading="eager"
                     />
                   </div>
                   <div class="hero-slide-set">
                     <img
-                      src="assets/images/hero-2.png"
-                      alt="Students walking in school campus"
-                      loading="lazy"
-                    />
-                    <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-1-1.png"
                       alt="Student reading a book"
                       loading="eager"
                     />
                     <img
-                      src="assets/images/hero-2.png"
+                      src="assets/images/slider-1-2.png"
                       alt="Students walking in school campus"
                       loading="lazy"
                     />
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-1-3.png"
                       alt="Student reading a book"
                       loading="eager"
+                    />
+                    <img
+                      src="assets/images/slider-1-4.png"
+                      alt="Students walking in school campus"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -135,51 +154,46 @@
                 >
                   <div class="hero-slide-set">
                     <img
-                      src="assets/images/hero-2.png"
+                      src="assets/images/slider-2-1.png"
                       alt="Students walking in school campus"
                       loading="lazy"
                     />
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-2-2.png"
                       alt="Student reading a book"
                       loading="eager"
                     />
                     <img
-                      src="assets/images/hero-2.png"
+                      src="assets/images/slider-2-3.png"
                       alt="Students walking in school campus"
                       loading="lazy"
                     />
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-2-4.png"
                       alt="Student reading a book"
                       loading="eager"
-                    />
-                    <img
-                      src="assets/images/hero-2.png"
-                      alt="Students walking in school campus"
-                      loading="lazy"
                     />
                   </div>
                   <div class="hero-slide-set">
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-2-1.png"
                       alt="Student reading a book"
                       loading="eager"
                     />
                     <img
-                      src="assets/images/hero-2.png"
+                      src="assets/images/slider-2-2.png"
                       alt="Students walking in school campus"
                       loading="lazy"
                     />
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-2-3.png"
                       alt="Student reading a book"
                       loading="eager"
                     />
                     <img
-                      src="assets/images/hero-2.png"
-                      alt="Students walking in school campus"
-                      loading="lazy"
+                      src="assets/images/slider-2-4.png"
+                      alt="Student reading a book"
+                      loading="eager"
                     />
                   </div>
                 </div>
@@ -192,50 +206,44 @@
                 >
                   <div class="hero-slide-set">
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-3-1.png"
                       alt="Student reading a book"
                       loading="eager"
                     />
                     <img
-                      src="assets/images/hero-2.png"
+                      src="assets/images/slider-3-2.png"
                       alt="Students walking in school campus"
                       loading="lazy"
                     />
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-3-3.png"
                       alt="Student reading a book"
                       loading="eager"
                     />
                     <img
-                      src="assets/images/hero-2.png"
+                      src="assets/images/slider-3-4.png"
                       alt="Students walking in school campus"
                       loading="lazy"
-                    />
-                    <img
-                      src="assets/images/hero-1.jpg"
-                      alt="Student reading a book"
-                      loading="eager"
                     />
                   </div>
                   <div class="hero-slide-set">
-
                     <img
-                      src="assets/images/hero-2.png"
+                      src="assets/images/slider-3-1.png"
                       alt="Students walking in school campus"
                       loading="lazy"
                     />
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-3-2.png"
                       alt="Student reading a book"
                       loading="eager"
                     />
                     <img
-                      src="assets/images/hero-2.png"
+                      src="assets/images/slider-3-3.png"
                       alt="Students walking in school campus"
                       loading="lazy"
                     />
                     <img
-                      src="assets/images/hero-1.jpg"
+                      src="assets/images/slider-3-4.png"
                       alt="Student reading a book"
                       loading="eager"
                     />
@@ -243,34 +251,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- SLIDER CONTROLS -->
-            <!-- <div class="hero-slider-controls">
-              <button
-                type="button"
-                class="hero-slider-btn hero-slider-btn--prev"
-                aria-label="Previous slide"
-              >
-                ‹
-              </button>
-
-              <button
-                type="button"
-                class="hero-slider-btn hero-slider-btn--next"
-                aria-label="Next slide"
-              >
-                ›
-              </button>
-
-              <button
-                type="button"
-                class="hero-slider-btn hero-slider-btn--pause"
-                aria-pressed="false"
-                aria-label="Pause slide animation"
-              >
-                ❚❚
-              </button>
-            </div> -->
           </div>
 
           <!-- RIGHT ENQUIRY FORM -->
@@ -318,6 +298,283 @@
           </aside>
         </div>
       </section>
+
+      <!-- STATS SECTION -->
+      <section class="stats-section">
+        <div class="stats-container">
+          <div class="stat-item">
+            <img
+              src="/assets/logos/feather-l.png"
+              alt=""
+              class="feather-icon"
+            />
+            <p class="stat-text">
+              Trusted by<br />
+              <strong>1 Million+</strong><br />
+              Parents
+            </p>
+            <img
+              src="/assets/logos/feather-r.png"
+              alt=""
+              class="feather-icon"
+            />
+          </div>
+
+          <div class="stat-item">
+            <img
+              src="/assets/logos/feather-l.png"
+              alt=""
+              class="feather-icon"
+            />
+            <p class="stat-text">
+              <strong>22+</strong><br />
+              Years<br />
+              of Legacy
+            </p>
+            <img
+              src="/assets/logos/feather-r.png"
+              alt=""
+              class="feather-icon"
+            />
+          </div>
+
+          <div class="stat-item">
+            <img
+              src="/assets/logos/feather-l.png"
+              alt=""
+              class="feather-icon"
+            />
+            <p class="stat-text">
+              <strong>500+</strong><br />
+              Participating<br />
+              Schools
+            </p>
+            <img
+              src="/assets/logos/feather-r.png"
+              alt=""
+              class="feather-icon"
+            />
+          </div>
+
+          <div class="stat-item">
+            <img
+              src="/assets/logos/feather-l.png"
+              alt=""
+              class="feather-icon"
+            />
+            <p class="stat-text">
+              <strong>17 Cities</strong><br />
+              Across the<br />
+              Globe
+            </p>
+            <img
+              src="/assets/logos/feather-r.png"
+              alt=""
+              class="feather-icon"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- PARTICIPATING SCHOOL SECTION -->
+      <section class="schools-section">
+        <h2 class="section-title">Participating Schools</h2>
+
+        <!-- ROW 1 -->
+        <div class="logo-row left">
+          <div class="logo-track">
+            <!-- SCHOOL LOGOS -->
+            <img src="assets/images/school-1.png" alt="school-xyz" />
+            <img src="assets/images/school-2.png" alt="school-abc" />
+            <img src="assets/images/school-3.png" alt="school-xyz" />
+            <img src="assets/images/school-4.png" alt="school-abc" />
+            <img src="assets/images/school-5.png" alt="school-xyz" />
+            <img src="assets/images/school-6.png" alt="school-abc" />
+
+            <img src="assets/images/school-1.png" alt="school-xyz" />
+            <img src="assets/images/school-2.png" alt="school-abc" />
+            <img src="assets/images/school-3.png" alt="school-xyz" />
+            <img src="assets/images/school-4.png" alt="school-abc" />
+            <img src="assets/images/school-5.png" alt="school-xyz" />
+            <img src="assets/images/school-6.png" alt="school-abc" />
+          </div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="logo-row right">
+          <div class="logo-track">
+            <!-- SCHOOL LOGOS -->
+            <img src="assets/images/school-1.png" alt="school-xyz" />
+            <img src="assets/images/school-2.png" alt="school-abc" />
+            <img src="assets/images/school-3.png" alt="school-xyz" />
+            <img src="assets/images/school-4.png" alt="school-abc" />
+            <img src="assets/images/school-5.png" alt="school-xyz" />
+            <img src="assets/images/school-6.png" alt="school-abc" />
+
+            <img src="assets/images/school-1.png" alt="school-xyz" />
+            <img src="assets/images/school-2.png" alt="school-abc" />
+            <img src="assets/images/school-3.png" alt="school-xyz" />
+            <img src="assets/images/school-4.png" alt="school-abc" />
+            <img src="assets/images/school-5.png" alt="school-xyz" />
+            <img src="assets/images/school-6.png" alt="school-abc" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SCHOOL CARD SECTION -->
+      <section class="school-fit-section">
+        <h2 class="section-heading">Choose the School That Fits You Best</h2>
+
+        <div class="school-slider">
+          <div class="school-card-track">
+            <div class="school-card">
+              <img src="/assets/images/card-1.png" alt="Pre Schools" />
+              <div class="card-overlay">
+                <h3>Pre-Schools & Early Learning Centres</h3>
+                <p>
+                  Nurturing foundational skills for toddlers and pre-primary
+                  children.
+                </p>
+              </div>
+            </div>
+
+            <div class="school-card">
+              <img src="/assets/images/card-2.png" alt="K12 Schools" />
+              <div class="card-overlay">
+                <h3>K–12 CBSE Day Schools</h3>
+                <p>
+                  Reputed schools offering complete schooling from Kindergarten
+                  to Grade 12.
+                </p>
+              </div>
+            </div>
+
+            <div class="school-card">
+              <img src="/assets/images/card-3.png" alt="Heritage Schools" />
+              <div class="card-overlay">
+                <h3>Heritage to New-Age Schools</h3>
+                <p>
+                  Time-tested schools to innovative pedagogy, tech-enabled,
+                  future-ready schools.
+                </p>
+              </div>
+            </div>
+
+            <div class="school-card">
+              <img
+                src="/assets/images/card-4.png"
+                alt="International Schools"
+              />
+              <div class="card-overlay">
+                <h3>International Curriculum Schools</h3>
+                <p>
+                  Offering IB, Cambridge, Finnish and other global curricula
+                  with a global learning environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination dots -->
+        <div class="slider-dots"></div>
+      </section>
+
+      <!-- APPOINTMENT CTA SECTION -->
+      <section class="appointment-cta">
+        <div class="appointment-cta__content">
+          <p class="eyebrow">Exciting Opportunities for Parents!</p>
+
+          <h2>
+            Pre-schedule Your<br />
+            School Appointments
+          </h2>
+
+          <p class="subtext">To Avoid Rush</p>
+
+          <a href="#appointment" class="appointment-cta-btn">
+            <span class="appointment-cta-icon" aria-hidden="true">↗</span>
+            <span class="header-icon_text">Pre-schedule Now</span>
+          </a>
+        </div>
+
+        <div class="appointment-cta__image">
+          <img
+            src="assets/images/appointment-cta.png"
+            alt="Parents interacting with school representatives"
+          />
+        </div>
+      </section>
+
+      <!-- EXHIBITION SECTION -->
+
+      <section class="">
+        <div class="exhibition-section">
+          <h2 class="exhibition-title">
+            What Makes This Exhibition a Must-Visit
+          </h2>
+
+          <div class="slider-wrapper">
+            <div class="slider" id="cardSlider">
+              <div class="card">
+                <img src="/assets/logos/exhibit-icon-1.png" />
+                <h3>Interact Directly with School Heads</h3>
+                <p>Get answers straight from the experts</p>
+              </div>
+
+              <div class="card">
+                <img src="/assets/logos/exhibit-icon-2.png" />
+                <h3>Compare Curriculum & Pedagogy</h3>
+                <p>
+                  Understand the differences between CBSE, ICSE, IB, Cambridge,
+                  Finnish & more
+                </p>
+              </div>
+
+              <div class="card">
+                <img src="/assets/logos/exhibit-icon-3.png" />
+                <h3>Get Exclusive Fee Structures & Offers</h3>
+                <p>Access transparent information and avail offers</p>
+              </div>
+
+              <div class="card">
+                <img src="/assets/logos/exhibit-icon-4.png" />
+                <h3>Explore Schools Offerings</h3>
+                <p>
+                  Preview infrastructure, co-curricular, teaching methodology
+                  and culture
+                </p>
+              </div>
+
+              <div class="card">
+                <img src="/assets/logos/exhibit-icon-5.png" />
+                <h3>On-the-Spot Admissions & Counselling</h3>
+                <p>Save time with instant applications and expert guidance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="highlights-controls">
+          <div class="controls">
+            <img
+              src="/assets/logos/left-arrow.png"
+              data-hover="/assets/logos/right-arrow.png"
+              class="arrow left-arrow hover-arrow"
+              alt="left"
+            />
+            <div class="slider-dots"></div>
+            <img
+              src="/assets/logos/left-arrow.png"
+              data-hover="/assets/logos/right-arrow.png"
+              class="arrow right-arrow hover-arrow"
+              alt="right"
+            />
+          </div>
+          <div class="white-space"></div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
@@ -326,7 +583,7 @@
         <!-- Logo -->
         <div class="footer_brand">
           <img
-            src="assets/logos/pse-logo.jpeg"
+            src="assets/logos/logo-1.png"
             alt="Premier Schools Exhibition"
             class="footer_logo"
           />
@@ -335,7 +592,11 @@
         <div class="footer_details_container">
           <!-- Corporate Office -->
           <div class="footer_block">
-            <div class="footer_icon">📍</div>
+            <img
+              src="/assets/logos/footer-icon-1.png"
+              alt="footer-location-icon"
+              class="footer-icon"
+            />
             <div>
               <h3 class="footer_title">Corporate Office:</h3>
               <p class="footer_text">
@@ -348,7 +609,11 @@
 
           <!-- Ahmedabad Office -->
           <div class="footer_block">
-            <div class="footer_icon">📍</div>
+            <img
+              src="/assets/logos/footer-icon-1.png"
+              alt="footer-address-icon"
+              class="footer-icon"
+            />
             <div>
               <h3 class="footer_title">Ahmedabad Office:</h3>
               <p class="footer_text">
@@ -361,7 +626,11 @@
 
           <!-- Call Us -->
           <div class="footer_block">
-            <div class="footer_icon">📞</div>
+            <img
+              src="/assets/logos/footer-icon-2.png"
+              alt="footer-phone-icon"
+              class="footer-icon"
+            />
             <div>
               <h3 class="footer_title">Call us on</h3>
               <p class="footer_text">
@@ -375,9 +644,27 @@
           <div class="footer_social">
             <h3 class="footer_title">Follow us on</h3>
             <div class="footer_social-icons">
-              <a href="#" aria-label="Instagram">📷</a>
-              <a href="#" aria-label="Facebook">📘</a>
-              <a href="#" aria-label="YouTube">▶️</a>
+              <a href="#" aria-label="Instagram">
+                <img
+                  src="/assets/logos/footer-icon-3.png"
+                  alt="footer-insta-icon"
+                  class="footer-icon"
+                />
+              </a>
+              <a href="#" aria-label="Facebook">
+                <img
+                  src="/assets/logos/footer-icon-4.png"
+                  alt="footer-fb-icon"
+                  class="footer-icon"
+                />
+              </a>
+              <a href="#" aria-label="YouTube">
+                <img
+                  src="/assets/logos/footer-icon-3.png"
+                  alt="footer-yt-icon"
+                  class="footer-icon"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -393,6 +680,9 @@
     </footer>
 
     <!-- scripts -->
+    <script src="js/header.js"></script>
+    <script src="js/sections.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/footer.js"></script>
   </body>
 </html>
