@@ -6,6 +6,9 @@ const dotsContainer = document.querySelector(".slider-dots");
 
 cards.forEach((_, i) => {
   const dot = document.createElement("button");
+
+  dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
+
   if (i === 0) dot.classList.add("active");
   dotsContainer.appendChild(dot);
 
