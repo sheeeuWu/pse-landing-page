@@ -16,29 +16,9 @@
     <link rel="stylesheet" href="/css/highlights-slider.css" />
   </head>
   <body>
-    <!-- Skip link for accessibility -->
-    <!-- <a href="#main-content" class="skip-link"> Skip to main content </a> -->
-
     <!-- HEADER -->
-    <!-- STICKY HEADER -->
-    <header class="header header-sticky" id="stickyHeader">
-      <div class="header-sticky-container">
-        <div class="header-logo header-logo-small">
-          <img
-            src="/assets/logos/logo-1.png"
-            alt="Premier Schools Exhibition"
-          />
-        </div>
-
-        <a href="#register" class="header-sticky-cta">
-          <span class="header-sticky-icon-text">Register Now</span>
-          <span class="header-sticky-cta-icon">→</span>
-        </a>
-      </div>
-    </header>
-
     <!-- TEMPORARY HEADER-->
-    <header class="header header--hero" id="heroHeader">
+    <header class="header header--hero" id="heroHeader" aria-label="secondary">
       <div class="header-container">
         <div class="header-logo">
           <img
@@ -55,6 +35,23 @@
     </header>
 
     <main id="main-content">
+      <!-- STICKY HEADER -->
+      <div class="header header-sticky" id="stickyHeader" aria-label="Primary">
+        <div class="header-sticky-container">
+          <div class="header-logo header-logo-small">
+            <img
+              src="/assets/logos/logo-1.png"
+              alt="Premier Schools Exhibition"
+            />
+          </div>
+
+          <a href="#register" class="header-sticky-cta">
+            <span class="header-sticky-icon-text">Register Now</span>
+            <span class="header-sticky-cta-icon">→</span>
+          </a>
+        </div>
+      </div>
+
       <!-- HERO SECTION -->
       <section
         class="hero"
@@ -254,7 +251,7 @@
           </div>
 
           <!-- RIGHT ENQUIRY FORM -->
-          <aside
+          <div
             class="hero-enquiry"
             id="enquiry"
             aria-labelledby="enquiry-title"
@@ -295,7 +292,45 @@
                 <span class="submit_button_text">Submit</span>
               </button>
             </form>
-          </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOBILE HERO SECTION -->
+      <section class="hero-mobile">
+        <!-- Top images -->
+        <div class="hero-upper-mobile">
+          <div class="hero-mobile-images">
+            <img src="assets/images/slider-1-1.png" alt="mobile-hero-img-1" />
+            <img src="assets/images/slider-2-1.png" alt="mobile-hero-img-2" />
+            <img src="assets/images/slider-3-1.png" alt="mobile-hero-img-3" />
+          </div>
+
+          <div class="hero-mobile-title">
+            <h1>
+              Discover Gurugram’s <br />
+              <span>Top 30+ Schools</span>
+            </h1>
+            <p class="subtitle">ALL IN ONE PLACE</p>
+          </div>
+        </div>
+
+        <div class="hero-lower-mobile">
+          <div class="hero-mobile-container">
+            <div class="hero-mobile-event">
+              <div class="hero-event_col hero-event_col--left">
+                <p class="hero-event_title">Apparel House,</p>
+                <p class="hero-event_sub">Sec 44, Gurugram</p>
+              </div>
+
+              <span class="hero-event_divider" aria-hidden="true"></span>
+
+              <div class="hero-event_col hero-event_col--right">
+                <p class="hero-event_title">2–3 August 2025</p>
+                <p class="hero-event_sub">Sat - Sun | 10AM - 6PM</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -426,7 +461,12 @@
         <h2 class="section-heading">Choose the School That Fits You Best</h2>
 
         <div class="school-slider">
-          <div class="school-card-track">
+          <div
+            class="school-card-track"
+            tabindex="0"
+            role="region"
+            aria-label="School categories slider"
+          >
             <div class="school-card">
               <img src="/assets/images/card-1.png" alt="Pre Schools" />
               <div class="card-overlay">
@@ -507,7 +547,6 @@
       </section>
 
       <!-- EXHIBITION SECTION -->
-
       <section class="">
         <div class="exhibition-section">
           <h2 class="exhibition-title">
@@ -515,15 +554,27 @@
           </h2>
 
           <div class="slider-wrapper">
-            <div class="slider" id="cardSlider">
+            <div
+              class="slider"
+              id="cardSlider"
+              tabindex="0"
+              role="region"
+              aria-label="Exhibition highlights slider"
+            >
               <div class="card">
-                <img src="/assets/logos/exhibit-icon-1.png" />
+                <img
+                  src="/assets/logos/exhibit-icon-1.png"
+                  alt="exhibit-icon-1"
+                />
                 <h3>Interact Directly with School Heads</h3>
                 <p>Get answers straight from the experts</p>
               </div>
 
               <div class="card">
-                <img src="/assets/logos/exhibit-icon-2.png" />
+                <img
+                  src="/assets/logos/exhibit-icon-2.png"
+                  alt="exhibit-icon-2"
+                />
                 <h3>Compare Curriculum & Pedagogy</h3>
                 <p>
                   Understand the differences between CBSE, ICSE, IB, Cambridge,
@@ -532,13 +583,19 @@
               </div>
 
               <div class="card">
-                <img src="/assets/logos/exhibit-icon-3.png" />
+                <img
+                  src="/assets/logos/exhibit-icon-3.png"
+                  alt="exhibit-icon-3"
+                />
                 <h3>Get Exclusive Fee Structures & Offers</h3>
                 <p>Access transparent information and avail offers</p>
               </div>
 
               <div class="card">
-                <img src="/assets/logos/exhibit-icon-4.png" />
+                <img
+                  src="/assets/logos/exhibit-icon-4.png"
+                  alt="exhibit-icon-4"
+                />
                 <h3>Explore Schools Offerings</h3>
                 <p>
                   Preview infrastructure, co-curricular, teaching methodology
@@ -547,7 +604,10 @@
               </div>
 
               <div class="card">
-                <img src="/assets/logos/exhibit-icon-5.png" />
+                <img
+                  src="/assets/logos/exhibit-icon-5.png"
+                  alt="exhibit-icon-5"
+                />
                 <h3>On-the-Spot Admissions & Counselling</h3>
                 <p>Save time with instant applications and expert guidance</p>
               </div>
@@ -673,7 +733,7 @@
       <!-- Bottom bar -->
       <div class="footer_bottom">
         <p>
-          Copyright <span id="currentYear"></span> | All rights reserved.
+          Copyright © <span id="currentYear"></span> | All rights reserved.
           Premier Schools Exhibition
         </p>
       </div>
