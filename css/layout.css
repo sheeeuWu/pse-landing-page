@@ -541,8 +541,8 @@
 }
 
 .stats-container {
-  max-width: 1080px;
-  margin: 0 50px;
+  /* max-width: 1080px; */
+  /* margin: 0 50px; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 35px;
